@@ -1,0 +1,140 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'androidx.navigation.safeargs'
+    id 'com.chaquo.python'
+
+
+}
+
+android {
+    namespace 'com.example.bankingapp'
+    compileSdk 33
+//    packagingOptions {
+//        pickFirst 'org/apache/batik/util/gui/resources/flags/flag_ca.gif'
+//
+//    }
+
+
+    defaultConfig {
+        applicationId "com.example.bankingapp"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        defaultConfig {
+            ndk {
+                abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+            }
+
+            python {
+                buildPython "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/python.exe"
+               // buildPython "C:/path/to/py.exe", "-3.8"
+            }
+            sourceSets {
+                main {
+                    python.srcDir "src/main/java/com/example/bankingapp/python"
+                }
+            }
+
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+//    python {
+//        version "3.8"
+//        buildPython "C:\\Users\\andre\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe"
+//        pip{
+//            install "opencv-contrib-python-headless"
+//            install "Keras==2.3.1"
+//            install "tensorflow"
+//            install "numpy"
+//            install "pillow"
+//        }
+//
+//    }
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.compose.ui:ui:1.4.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation platform('com.google.firebase:firebase-bom:31.2.3')
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+    implementation 'com.github.AtifSayings:Animatoo:1.0.1'
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
+
+    implementation 'androidx.room:room-runtime:2.3.0'
+    annotationProcessor 'androidx.room:room-compiler:2.3.0'
+
+
+    implementation 'com.hudomju:swipe-to-dismiss-undo:1.0'
+    implementation 'com.baoyz.swipemenulistview:library:1.3.0'
+
+    implementation "androidx.recyclerview:recyclerview:1.3.0"
+    // For control over item selection of both touch and mouse driven selection
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
+    def nav_version = "2.5.3"
+
+    // Java language implementation
+    implementation "androidx.navigation:navigation-fragment:$nav_version"
+    implementation "androidx.navigation:navigation-ui:$nav_version"
+
+
+    implementation('org.apache.poi:poi:4.1.2') {
+        exclude group: 'org.apache.poi', module: 'poi-awt'
+    }
+    implementation('org.apache.poi:poi-ooxml:4.1.2') {
+        exclude group: 'org.apache.poi', module: 'poi-awt'
+    }
+
+
+    implementation 'net.sourceforge.jexcelapi:jxl:2.6.12'
+    implementation 'javax.xml.stream:stax-api:1.0-2'
+
+    implementation 'com.sun.mail:android-mail:1.6.4'
+    implementation 'com.sun.mail:android-activation:1.6.4'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'it.xabaras.android:recyclerview-swipedecorator:1.4'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    //implementation 'com.github.ImanX:MonthPickerDialog:2.0.0'
+    implementation 'com.whiteelephant:monthandyearpicker:1.3.0'
+    implementation 'org.json:json:20210307'
+    //implementation 'com.chaquo.python:pandas:1.3.2'
+    //implementation 'com.chaquo.python:pandas:14.0.2'
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

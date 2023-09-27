@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundTint="#00FFFFFF"
+        tools:context=".fragments.HomeFragment">
+
+        <ImageView
+            android:id="@+id/imgViewCard"
+            android:layout_width="348dp"
+            android:layout_height="209dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/newcard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/account_number"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/imgViewCard"
+            app:layout_constraintTop_toTopOf="@+id/imgViewCard" />
+
+        <TextView
+            android:id="@+id/tvAccountVisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:letterSpacing=".3"
+            android:text="2459702663"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@+id/imgViewCard"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/tvAccountHidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:letterSpacing=".3"
+            android:text="@string/hiddenAccount"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/imgViewCard"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="108dp"
+            android:text="@string/name"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/imgViewCard"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/tvNameVisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/v_sii_carmen_andreea"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@+id/imgViewCard"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/tvNameHidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/nameHidden"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/imgViewCard"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="88dp"
+            android:text="Valid Thru"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/btnCopy" />
+
+        <TextView
+            android:id="@+id/tvValidVisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="208dp"
+            android:layout_marginTop="8dp"
+            android:text="08/28"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@+id/imgViewCard"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/tvValidHidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="208dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/validHidden"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/imgViewCard"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_mastercard"
+            app:layout_constraintBottom_toBottomOf="@+id/imgViewCard"
+            app:layout_constraintEnd_toEndOf="@+id/imgViewCard"
+            app:layout_constraintHorizontal_bias="0.342"
+            app:layout_constraintStart_toEndOf="@+id/textView13" />
+
+        <Button
+            android:id="@+id/btnCopy"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="63dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="20dp"
+            android:padding="0dp"
+            android:text="Copy"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:icon="@drawable/ic_copy"
+            app:iconPadding="4dp"
+            app:iconSize="16dp"
+            app:iconTint="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/imgViewCard"
+            app:layout_constraintTop_toTopOf="@+id/textView4"
+            tools:ignore="SpeakableTextPresentCheck, TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tvYourBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="8dp"
+            android:text="Your Balance"
+            app:layout_constraintStart_toStartOf="@+id/imgViewCard"
+            app:layout_constraintTop_toBottomOf="@+id/imgViewCard" />
+
+        <TextView
+            android:id="@+id/tvBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/_50_356_92"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imgViewCard"
+            app:layout_constraintTop_toBottomOf="@+id/tvYourBalance" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="48dp"
+            android:text="@string/ron"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/tvBalance"
+            app:layout_constraintTop_toTopOf="@+id/tvYourBalance" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/deposits"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBalance" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabADD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:src="@drawable/add"
+            app:backgroundTint="#FFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/textView18"
+            app:layout_constraintTop_toBottomOf="@+id/tvBalance"
+            tools:ignore="SpeakableTextPresentCheck, TouchTargetSizeCheck" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:src="@drawable/down_arrow"
+            android:visibility="gone"
+            app:backgroundTint="#FFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/fabADD"
+            app:layout_constraintTop_toBottomOf="@+id/textView17"
+            app:rippleColor="#FFFFFF"
+            tools:ignore="SpeakableTextPresentCheck, TouchTargetSizeCheck,DuplicateClickableBoundsCheck" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabArrowUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:visibility="visible"
+            app:backgroundTint="#FCFFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/fabADD"
+            app:layout_constraintTop_toBottomOf="@+id/textView17"
+            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_up_24"
+            tools:ignore="SpeakableTextPresentCheck, TouchTargetSizeCheck" />
+
+        <ListView
+            android:id="@+id/lvDeposits"
+            android:layout_width="421dp"
+            android:layout_height="637dp"
+            android:layout_marginTop="15dp"
+            android:foregroundGravity="center"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fabADD" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabHiddenDetails"
+            android:layout_width="58dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="55dp"
+            android:clickable="true"
+            android:src="@drawable/show_details"
+            app:backgroundTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/imgViewCard"
+            app:layout_constraintTop_toTopOf="@+id/textView11"
+            tools:ignore="SpeakableTextPresentCheck, TouchTargetSizeCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/transactionsFragment">
+
+    <fragment
+        android:id="@+id/transactionsFragment"
+        android:name="com.example.bankingapp.fragments.TransactionsFragment"
+        android:label="fragment_transactions"
+        tools:layout="@layout/fragment_transactions" >
+        <argument
+            android:name="newTransfer"
+            app:argType="com.example.bankingapp.NewTransfer" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentsFragment"
+        android:name="com.example.bankingapp.fragments.PaymentsFragment"
+        android:label="PaymentsFragment" >
+        <action
+            android:id="@+id/action_paymentsFragment_to_transactionsFragment"
+            app:destination="@id/transactionsFragment" />
+    </fragment>
+</navigation>

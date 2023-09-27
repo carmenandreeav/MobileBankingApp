@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">BankingApp</string>
+    <string name="login">LogIn</string>
+    <string name="code">You will receive an unique SMS code on this mobile number</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="_40">+40 </string>
+    <string name="_1234567890"> 7123456789</string>
+    <string name="send_code">Send code</string>
+    <string name="titlu">C-MobileGroup</string>
+    <string name="enter_the_code">Enter the code:</string>
+    <string name="didn_t_receive_the_code">Didn\'t receive the code?</string>
+    <string name="resend_sms">Resend SMS</string>
+    <string name="verify">Verify</string>
+    <string name="home">Home</string>
+    <string name="transactions">Transactions</string>
+    <string name="payments">Payments</string>
+    <string name="reports">Reports</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="homefragment">HomeFragment</string>
+    <string name="transactionsfragment">TransactionsFragment</string>
+    <string name="paymentsfragment">PaymentsFragment</string>
+    <string name="account_number">Account number</string>
+    <string name="name">Name</string>
+    <string name="v_sii_carmen_andreea">Văsii Carmen-Andreea</string>
+    <string name="ron">RON</string>
+    <string name="_50_356_92">50,356.92</string>
+    <string name="deposits">Deposits</string>
+    <string name="amount">Amount</string>
+    <string name="period">Period</string>
+    <string name="interest_rate">Interest Rate:</string>
+    <string name="hiddenAccount">**********</string>
+    <string name="nameHidden">***** ****** *******</string>
+    <string name="validHidden">**/**</string>
+    <string name="open_new_deposit">Open new deposit</string>
+    <string name="cancel">Cancel</string>
+
+    <string-array name="period_deposit">
+        <item>1 month</item>
+        <item>6 months</item>
+        <item>8 months</item>
+        <item>12 months</item>
+    </string-array>
+
+    <string name="dialog_1">DialogOne</string>
+    <string name="withdrawals">Withdrawals</string>
+    <string name="closeWithdrawals">Close</string>
+    <string name="sucursala_constantin_brancoveanu">Sucursala Constantin Brancoveanu</string>
+    <string name="sucursala_vatra_luminoasa">Sucursala Vatra Luminoasa</string>
+    <string name="_1000">+1000</string>
+    <string name="_2_05_2023">2/05/2023</string>
+    <string name="_140">-140</string>
+    <string name="_29_04_2023">29/04/2023</string>
+    <string name="extras_de_cont">Extras de cont</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort</string>
+    <string name="toate">Toate</string>
+    <string name="facturi">Facturi</string>
+    <string name="data">Data</string>
+    <string name="venituri">Venituri</string>
+    <string name="cheltuieli">Cheltuieli</string>
+    <string name="descrescator">Descrescator</string>
+    <string name="crescator">Crescator</string>
+    <string name="make_a_payment">Make a payment</string>
+    <string name="make_a_transfer">Make a transfer</string>
+    <string name="suma">Suma</string>
+    <string name="este_factura">Este factura?</string>
+    <string name="beneficiar">Beneficiar:</string>
+    <string name="suma1">Suma:</string>
+    <string name="iban">IBAN:</string>
+    <string name="descriere">Descriere:</string>
+    <string name="send">SEND</string>
+    <string name="alfabetic">ALFABETIC</string>
+    <string name="extras_de_contT">Extras de cont</string>
+    <string name="alegeti_perioada_pentru_care_doriti_un_extras_de_cont_acesta_va_fi_salvat_in_memoria_telefonului_si_se_va_trimite_pe_e_mail_ul_asociat_acestui_cont">Alegeti perioada pentru care doriti un extras de cont. Acesta va fi salvat in memoria telefonului si se va trimite pe e-mail-ul asociat acestui cont.</string>
+    <string name="de_la">DE LA</string>
+    <string name="pana_la">PANA LA</string>
+    <string name="renunta">Cancel</string>
+    <string name="solicita">Solicita</string>
+    <string name="general">GENERAL</string>
+    <string name="alege_luna">ALEGE LUNA</string>
+    <string name="obtine_o_predictie_aproximativa_a_sumei_cheltuita_in_luna_viitoare_pe_baza_obiceiurilor_observate_in_istoric">Obtine o predictie aproximativa a sumei cheltuita in luna viitoare pe baza obiceiurilor observate in istoric.</string>
+    <string name="predict">Predict</string>
+</resources>

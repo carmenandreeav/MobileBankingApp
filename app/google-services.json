@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "889356145636",
+    "project_id": "otp-verification-14c18",
+    "storage_bucket": "otp-verification-14c18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889356145636:android:e1a1508dcfc78480be6df1",
+        "android_client_info": {
+          "package_name": "com.example.bankingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889356145636-mph0br9bjois2k57k1mes3j8e24ni17r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bankingapp",
+            "certificate_hash": "b572deeb367c37bc617109be18c4dd68a98d140c"
+          }
+        },
+        {
+          "client_id": "889356145636-bklqsrp42nr1fosir311t4nthj4vuvpb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyNhg336dndx4GjiIYFnAdHa_pf_Vb9Xo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889356145636-bklqsrp42nr1fosir311t4nthj4vuvpb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
